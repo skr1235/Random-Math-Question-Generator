@@ -1,3 +1,4 @@
+import random
 # Function to greet the user
 def greet_user(user_name):
     welcome_message = "Hello, " + user_name + "! Welcome to the math quiz."
@@ -47,11 +48,11 @@ total = 0
 
 while total < 5:
 
-    num1 = randint(1, 10)
-    num2 = randint(1, 10)
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
 
     # Randomly choose the operator.
-    op_num = randint(1,4)
+    op_num = random.randint(1,4)
     op = choose_operator(op_num)
 
     print_question(num1, num2, op)
